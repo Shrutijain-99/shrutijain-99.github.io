@@ -89,6 +89,7 @@ background-color: #878332;
   grid-area: four;
  background-color: black;
   //justify-self: center ;
+  text-decoration: none;
 }
 .four > p{
   margin: auto;

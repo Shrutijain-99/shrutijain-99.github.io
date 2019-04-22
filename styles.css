@@ -8,8 +8,8 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: 2fr 500px 1fr 1fr 2fr;
+  grid-template-rows: auto auto 200px 300px 100px auto auto;
   color: black;
   //grid-auto-rows: auto;
 
@@ -40,7 +40,7 @@ body {
  .one > center{
    color: yellow;
    padding: 10px;
-font-size: 150%;
+font-size: 250%;
 //justify-self: center ;
 font-family: Comic Sans MS;
  }
@@ -92,7 +92,7 @@ background-color: #878332;
 }
 .four > p{
   margin: auto;
-    width: 80%;
+    width: 90%;
   color: white;
   padding: 4px;
   border: 10px
@@ -100,11 +100,11 @@ font-size: 100%;
 //justify-self: center ;
 font-family:Verdana ;
 }
-.four > p1{
+.four > a > p{
   margin: auto;
-    width: 85%;
+    width: 90%;
   color: yellow;
-  padding: 24px;
+  padding: 2px;
   border: 10px
 font-size: 100%;
 //justify-self: center ;
@@ -113,7 +113,45 @@ font-family:Verdana ;
 .four > a{
   padding: 12px;
   margin: 2px;
+  color: white;
+
+    font-size: 100%;
+  text-decoration: none;
 }
+.four > a > p{
+height: 40px;
+}
+.four > a > p:hover{
+
+  font-size: 200%;
+
+  color: white;
+  text-decoration: none;
+}
+.four > a > h1{
+
+  padding: 5px;
+font-size: 150%;
+
+//justify-self: center ;
+font-family: Helvetica;
+  color: yellow;
+
+  width: 150px;
+
+  margin: 20px;
+}
+.four > a > p{
+  margin: auto;
+    width: 90%;
+  color: yellow;
+  padding: 2px;
+  border: 10px
+font-size: 100%;
+//justify-self: center ;
+font-family:Verdana ;
+}
+
 .five {
   grid-area: five;
   //justify-self: center ;
@@ -125,10 +163,10 @@ font-family:Verdana ;
   background-color: #2f2f2f;
  //justify-self: center ;
 }
-.six > img{
-  padding: 20px;
-  border: 2px
+.six > img {
+  padding-left: 20px;
 }
+
 .seven {
   grid-area: seven;
   background-color: #2f2f2f;
@@ -146,8 +184,7 @@ font-family:Verdana ;
 .eight > p4{
 
  padding: 10px;
-    width: 320px;
- margin: 0;
+    margin: 10px;
     width: 100%;
   color: white;
   padding: 25px;
@@ -210,7 +247,7 @@ font-weight: bold;
   background-color: black;
 }
 .twelve > a{
-  padding: 2px;
+  padding: 10px;
 margin: 10px;
 }
 .thirteen {

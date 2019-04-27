@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="anim.css">
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+  myVar=fadeOut('slow');
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+ <center><div class="preloader" id="loader" width="100%" ><img src="loader.gif" width="40%"></div></center>
+<div style="display:none;" id="myDiv" >
+<br><br><br>
+<center>  <video width="60%" controls>
+    <source src="Shoes.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+</div>
+</body>
+</html>

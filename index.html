@@ -3,9 +3,24 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+<script>
+var myVar;
 
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+  myVar=fadeOut('slow');
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+ <center><div class="preloader" id="loader" width="100%" ><img src="loader.gif" width="40%"></div></center>
+<div style="display:none;" id="myDiv" >
 <div class="grid">
 
   <div class="one">
@@ -23,13 +38,12 @@
 
   <div class="three">
     <br>
-    <br>
 
 <p>Categories</p>
   </div>
   <div class="four">
 
-  <a href="default.asp" target="white"><p>Animation</p></a>
+  <a href="anim.html" target="white"><p>Animation</p></a>
 
 <br>
 
@@ -38,11 +52,12 @@
 <br>
 
 
-  <a href="default.asp" target="white"><p>Portraits</p></a>
+  <a href="portrait.html" target="white"><p>Portraits</p></a>
+
 
 <br>
 
-    <a href="default.asp" target="white"><p>Web Design and Development</p></a><br>
+    <a href="web.html" target="white"><p>Web Design and Development</p></a><br>
 
 
 
@@ -123,6 +138,6 @@
 
   </div>
 
-
+</div>
 </body>
 </html>
